@@ -1,3 +1,5 @@
+import type { fabric } from 'fabric';
+
 export interface CanvasElement {
   id: string;
   type: 'text' | 'image' | 'shape' | 'icon';
@@ -24,6 +26,7 @@ export interface Template {
   width: number;
   height: number;
   thumbnail: string;
+  backgroundColor?: string;
   elements: CanvasElement[];
 }
 
